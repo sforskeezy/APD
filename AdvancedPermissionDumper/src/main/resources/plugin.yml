@@ -1,0 +1,17 @@
+name: AdvancedPermissionDumper
+version: '${project.version}'
+main: com.skeezy.apd.advancedpermissiondumper.AdvancedPermissionDumper
+author: sforskeezy
+
+description: A plugin to dump all permissions of a specified plugin or all plugins to a YAML file.
+
+commands:
+  apd:
+    description: Dumps all permissions of the specified plugin or all plugins.
+    usage: /apd <plugin> or /apd ALL
+    permission: apd.use
+    permission-message: You do not have permission to use this command.
+permissions:
+  apd.use:
+    description: Allows the use of the /apd command.
+    default: op
